@@ -29,6 +29,7 @@ function button2() {
 }
 function form(e){
   window.alert("Thank you!!")
+  analytics.track("Step 3 Form Submitted")
   analytics.identify({
     first_name: e.target.elements.fname.value,
     mobile: e.target.elements.mobile.value
