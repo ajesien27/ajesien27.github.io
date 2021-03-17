@@ -21,16 +21,16 @@
 
 <script type="text/javascript">
 function button1() {
-    analytics.track('View Details ');
+    analytics.track('Product Details Viewed');
     document.getElementById("button2").style.visibility="visible";
 }
 function button2() {
-    analytics.track('Step 2 Button Clicked');
+    analytics.track('Product Added');
     document.getElementById("form").style.visibility="visible";
 }
 function form(e){
   window.alert("Thank you!!")
-  analytics.track("Step 3 Form Submitted")
+  analytics.track("Order Completed")
   analytics.identify({
     first_name: e.target.elements.fname.value,
     mobile: e.target.elements.mobile.value
