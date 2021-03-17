@@ -7,20 +7,21 @@
   analytics.page();
   }}();
 </script>
-</head> 
+</head>
 <body style="font-family: sans-serif;">
 <div class="_icon" style="width:100px;"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 71"><path d="M34.889.847a34.89 34.89 0 10.002 69.78A34.89 34.89 0 0034.89.847zm0 60.584a25.695 25.695 0 11.002-51.39 25.695 25.695 0 01-.002 51.39" fill="#F22F46"></path><path d="M36.323 27.047a7.254 7.254 0 1114.508-.003 7.254 7.254 0 01-14.508.003zm0 17.378a7.255 7.255 0 1114.509-.003 7.255 7.255 0 01-14.51.003zm-17.378 0a7.255 7.255 0 1114.51-.002 7.255 7.255 0 01-14.51.002zm0-17.378a7.256 7.256 0 1114.51-.002 7.256 7.256 0 01-14.51.002" fill="#F22F46"></path><path d="M107.523 35.54v-3.488h-6.613v-6.831h-3.634v6.831h-6.613v3.488h6.613v6.831h3.634v-6.83h6.613z" fill="#1F304C"></path><path d="M188.519 24.817H155.08c-.638 0-1.155.517-1.155 1.155v3.893c0 .639.517 1.156 1.155 1.156h33.439c.638 0 1.155-.518 1.155-1.155v-3.894c0-.638-.517-1.155-1.155-1.155zm-22.119 15.5h-33.44c-.638 0-1.155.517-1.155 1.155v3.893c0 .638.517 1.155 1.155 1.155h33.44c.638 0 1.155-.517 1.155-1.155v-3.893c0-.638-.517-1.155-1.155-1.155z" fill="#52BD94"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M136.094 29.062a1.16 1.16 0 001.406-.808 24.4 24.4 0 0128.508-16.4 1.146 1.146 0 001.341-.833l1.01-3.768a1.169 1.169 0 00-.134-.9 1.157 1.157 0 00-.743-.526 30.594 30.594 0 00-35.943 20.791 1.163 1.163 0 00.102.889 1.153 1.153 0 00.705.549l3.748 1.006zm49.3 13.198a1.164 1.164 0 00-1.422.808 24.4 24.4 0 01-28.509 16.42 1.143 1.143 0 00-1.34.833l-.99 3.748a1.156 1.156 0 00.45 1.242c.128.09.273.154.427.187a30.611 30.611 0 0035.943-20.795 1.143 1.143 0 00-.808-1.433l-3.751-1.01z" fill="#52BD94"></path><path d="M178.415 18.008a3.4 3.4 0 100-6.8 3.4 3.4 0 000 6.8zm-35.342 42.119a3.4 3.4 0 100-6.8 3.4 3.4 0 000 6.8z" fill="#52BD94"></path></svg></div>
-<h1>SuperClass Sample Website</h1>
-<button id="button1" onclick="button1()">Onboarding Step 1</button><br><br>
-<button id="button2" style="visibility:hidden;" onclick='button2()'>Onboarding Step 2</button><br><br>
+<h1>Twilio Track Jacket</h1>
+<img src="https://dpnq9sw8cp22kq0d1q4opi18-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/TwilioJackets.jpg" width="350px"><br><br>
+<button id="button1" onclick="button1()">View Details</button><br>
+<div id="button2" style="visibility:hidden;"><p>A very nice track jacket for developers. Will impress your friends.</p><button onclick='button2()'>Add to Cart</button><br><br></div>
 <form style="visibility:hidden;" id="form" onsubmit="form(event)">
-  <label for="fname">First Name: </label><input type="text" id="fname" name="fname"><br><br>
-  <label for="mobile">Mobile Number: </label><input type="text" id="mobile" name="mobile"><br><br><input type="submit" value="Submit">
+  <label for="fname">Name: </label><input type="text" id="fname" name="fname"><br><br>
+  <label for="mobile">Phone Number: </label><input type="text" id="mobile" name="mobile"><br><br><input type="submit" value="Checkout">
 </form>
 
 <script type="text/javascript">
 function button1() {
-    analytics.track('Step 1 Button Clicked');
+    analytics.track('View Details ');
     document.getElementById("button2").style.visibility="visible";
 }
 function button2() {
